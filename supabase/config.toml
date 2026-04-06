@@ -1,0 +1,13 @@
+project_id = "wopryaihdzoxkdwbbltn"
+
+[functions.generate-membership]
+verify_jwt = false
+
+[functions.image-proxy]
+verify_jwt = false
+
+[functions.fetch-instagram]
+verify_jwt = false
+
+[functions.submit-lead]
+verify_jwt = false
