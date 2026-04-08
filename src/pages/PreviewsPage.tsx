@@ -124,9 +124,9 @@ export default function PreviewsPage() {
         <button
           onClick={() => navigate("/")}
           className="preview-back-btn"
-          style={{ alignSelf: "flex-start", marginBottom: 16 }}
+          style={{ alignSelf: "flex-start", marginBottom: 16, marginLeft: 65 }}
         >
-          ← Home
+          ← Home  
         </button>
 
         {/* Navigation + Phone */}
@@ -148,14 +148,13 @@ export default function PreviewsPage() {
           <div
             style={{
               position: "relative",
-              width: 393,
+              width: 345,
               height: 852,
               borderRadius: 54,
               background: "hsl(0,0%,5%)",
               boxShadow: "0 0 0 2px hsl(0,0%,15%), 0 0 0 4px hsl(0,0%,8%), 0 40px 80px rgba(0,0,0,0.6), inset 0 0 0 2px hsl(0,0%,12%)",
               overflow: "hidden",
               flexShrink: 0,
-              padding: "0 12px"
             }}
           >
             <div style={{ position: "absolute", left: -3, top: 180, width: 3, height: 32, background: "hsl(0,0%,12%)", borderRadius: "2px 0 0 2px" }} />
