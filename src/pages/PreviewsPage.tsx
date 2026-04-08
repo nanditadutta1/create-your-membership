@@ -76,7 +76,7 @@ export default function PreviewsPage() {
 
   if (!membershipData) {
     return (
-      <div className="preview-root">
+      <div className="preview-root" style={{ padding: "10px"}}>
         <div className="gen-glow" />
         <div style={{ textAlign: "center", color: "#fff", position: "relative", zIndex: 1 }}>
           <h2 style={{ fontFamily: "'Gambarino', serif", fontSize: 28, marginBottom: 12 }}>No membership data</h2>
@@ -164,7 +164,7 @@ export default function PreviewsPage() {
 
             <div style={{ position: "absolute", top: 4, left: 4, right: 4, bottom: 4, borderRadius: 50, overflow: "hidden", background: "hsl(220,10%,7%)" }}>
               <div style={{ position: "absolute", top: 12, left: "50%", transform: "translateX(-50%)", width: 126, height: 36, borderRadius: 100, background: "#000", zIndex: 100 }} />
-              <div style={{ width: "100%", height: "100%", overflowY: "auto", overflowX: "hidden" }}>
+              <div style={{ width: "100%", height: "100%", overflowY: "auto", overflowX: "hidden", padding: "0 12px 0 12px" }}>
                 <MembershipLanding key={currentIndex} {...variantToProps(membershipData, variant, currentIndex, logoUrl)} />
               </div>
             </div>
