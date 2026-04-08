@@ -155,6 +155,7 @@ export default function PreviewsPage() {
               boxShadow: "0 0 0 2px hsl(0,0%,15%), 0 0 0 4px hsl(0,0%,8%), 0 40px 80px rgba(0,0,0,0.6), inset 0 0 0 2px hsl(0,0%,12%)",
               overflow: "hidden",
               flexShrink: 0,
+              padding: "0 12px"
             }}
           >
             <div style={{ position: "absolute", left: -3, top: 180, width: 3, height: 32, background: "hsl(0,0%,12%)", borderRadius: "2px 0 0 2px" }} />
