@@ -94,6 +94,7 @@ function Header({ restaurantName, title, subtitle, themeColor, fontColor, logoUr
           margin: "0 auto 10px",
           borderRadius: 100,
           background: "#000",
+          display:"none",
         }}
       />
 
@@ -129,6 +130,7 @@ function Header({ restaurantName, title, subtitle, themeColor, fontColor, logoUr
           letterSpacing: "0.08em",
           textTransform: "uppercase" as const,
           marginBottom: 26,
+          marginTop: 50,
         }}
       >
         {restaurantName || "Restaurant"}
