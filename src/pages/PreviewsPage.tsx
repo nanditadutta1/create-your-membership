@@ -119,7 +119,7 @@ export default function PreviewsPage() {
     >
       <div className="gen-glow" />
 
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "124px 24px 40px", position: "relative", zIndex: 1 }}>
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "90px 24px 40px", position: "relative", zIndex: 1 }}>
         {/* Back button */}
         <button
           onClick={() => navigate("/")}
