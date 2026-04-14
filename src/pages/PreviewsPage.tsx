@@ -119,30 +119,19 @@ export default function PreviewsPage() {
     >
       <div className="gen-glow" />
 
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "90px 24px 40px", position: "relative", zIndex: 1 }}>
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "65px 24px 40px", position: "relative", zIndex: 1 }}>
         {/* Back button */}
         <button
           onClick={() => navigate("/")}
           className="preview-back-btn"
-          style={{ alignSelf: "flex-start", marginBottom: 16, marginLeft: 65 }}
+          style={{ alignSelf: "flex-start", marginBottom: 16 }}
         >
           ← Home  
         </button>
 
         {/* Navigation + Phone */}
         <div style={{ display: "flex", alignItems: "center", gap: 24 }}>
-          {/* Left arrow */}
-          <button
-            onClick={goPrev}
-            disabled={currentIndex === 0}
-            className="preview-nav-btn"
-            style={{
-              opacity: currentIndex === 0 ? 0.3 : 1,
-              cursor: currentIndex === 0 ? "default" : "pointer",
-            }}
-          >
-            ‹
-          </button>
+         
 
           {/* iPhone 15 Pro Frame — UNTOUCHED */}
           <div
@@ -170,14 +159,33 @@ export default function PreviewsPage() {
             </div>
           </div>
 
+           {/* Left arrow */}
+          <button
+            onClick={goPrev}
+            disabled={currentIndex === 0}
+            className="preview-nav-btn prev-btn"
+            style={{
+              opacity: currentIndex === 0 ? 1 : 1,
+              cursor: currentIndex === 0 ? "default" : "pointer",
+              position: "absolute",
+              zIndex:2,
+              left:"20px",
+            }}
+          >
+            ‹
+          </button>
+
           {/* Right arrow */}
           <button
             onClick={goNext}
             disabled={currentIndex === total - 1}
-            className="preview-nav-btn"
+            className="preview-nav-btn next-btn"
             style={{
-              opacity: currentIndex === total - 1 ? 0.3 : 1,
+              opacity: currentIndex === total - 1 ? 1 : 1,
               cursor: currentIndex === total - 1 ? "default" : "pointer",
+              position: "absolute",
+              zIndex:2,
+              right:"20px",
             }}
           >
             ›

@@ -573,7 +573,7 @@ export default function MembershipLanding(props: MembershipLandingProps) {
       <div ref={mainRef} style={{ maxWidth: 440, margin: "0 auto", minHeight: "100vh", background: "#fafafa", position: "relative", fontFamily: T.sans, filter: showPopup ? "blur(5px)" : "none", transition: "filter 0.3s ease" }}>
         <Header restaurantName={props.restaurantName} title={data.title} subtitle={data.subtitle} themeColor={data.themeColor} fontColor={data.fontColor} logoUrl={props.logoUrl} />
 
-        <div style={{ margin: "-168px 10px 0", position: "relative", zIndex: 2, paddingBottom: 120 }}>
+        <div style={{ margin: "-168px 10px 0", position: "relative", zIndex: 2, paddingBottom: 30 }}>
           <div style={{ animation: "slideUp 0.4s ease-out" }}>
             <CustomerSavingAmountCard savings={data.savings} />
           </div>
