@@ -108,6 +108,7 @@ export default function PreviewsPage() {
   };
 
   const variant = variants[currentIndex];
+  const isDesktop = window.innerWidth >= 1024;
 
   return (
     <div
@@ -119,7 +120,7 @@ export default function PreviewsPage() {
     >
       <div className="gen-glow" />
 
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "65px 24px 40px", position: "relative", zIndex: 1 }}>
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", padding: isDesktop ? "24px" : "65px", position: "relative", zIndex: 1 }}>
         {/* Back button */}
         <button
           onClick={() => navigate("/")}
@@ -137,7 +138,7 @@ export default function PreviewsPage() {
           <div
             style={{
               position: "relative",
-              width: 345,
+              width: isDesktop ? 393 : 345,
               height: 852,
               borderRadius: 54,
               background: "hsl(0,0%,5%)",
@@ -169,7 +170,7 @@ export default function PreviewsPage() {
               cursor: currentIndex === 0 ? "default" : "pointer",
               position: "absolute",
               zIndex:2,
-              left:"20px",
+              left: isDesktop ? "-50px" : "20px",
             }}
           >
             ‹
@@ -185,7 +186,7 @@ export default function PreviewsPage() {
               cursor: currentIndex === total - 1 ? "default" : "pointer",
               position: "absolute",
               zIndex:2,
-              right:"20px",
+              right: isDesktop ? "-50px" : "20px",
             }}
           >
             ›
